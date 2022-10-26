@@ -1,0 +1,29 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.header{
+    background-color: #e2e626;
+}
+.ofertas{
+    background-color: #2860a1;
+}
+.sabores{
+    background-color: #a1285a;
+}
+.adornos{
+    background-color: #54a128;
+}
+.pedidos{
+    background-color: #b4b4b4;
+}
+.direcciones{
+    background-color: #725f22;
+}
+.itempedidos{
+    width:max-content;
+}

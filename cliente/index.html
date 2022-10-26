@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería Rico Pastel</title>
+    <link rel="stylesheet" href="../css/pasteleria.css">
+</head>
+<body>
+    <header class="container header">
+        <h2><img src="../images/pasteleria.png" alt="Pasteleria Rico Pastel"></h2>
+    </header>
+
+    <h2>OFERTAS</h2>
+    <section class="container ofertas">
+
+        
+        <div>
+            <img src="../images/oferta_choco.png" alt="chocolate y fresas" height="400px" width="300px">
+            <p>Pastel de Chocolate relleno de crema de chocolate y fresas </p> 
+        </div>
+        <div>
+            <img src="../images/oferta_velvet.png" alt="chocolate y fresas" height="400px" width="300px">
+            <p>Pastel Red Velvet Relleno de crema pastelera y toping de frutos rojos</p>
+        </div>
+        <div>
+            <img src="../images/oferta_limon.png" alt="chocolate y fresas" height="400px" width="300px">
+            <p>Pastel de Limón Relleno de crema de limón</p>
+        </div>
+    </section>
+    <h2>SABORES</h2>
+    <section class="container sabores">
+        <div class="item">
+            <h3>Chocolate</h3>
+            <img src="../images/chocolate.png" alt="chocolate" height="400px" width="300px">
+        </div>
+        <div class="item">
+            <h3>Vainilla</h3>
+            <img src="../images/vainilla.png" alt="vainilla" height="400px" width="300px">
+        </div>
+        <div class="item">
+            <h3>Red Velvet</h3>
+            <img src="../images/red_velvet.png" alt="red velvet" height="400px" width="300px">    
+        </div>
+        <div class="item">
+            <h3>Limón</h3>
+            <img src="../images/limon.png" alt="rlimon" height="400px" width="300px">    
+        </div>
+    </section>
+
+    <h2>ADORNOS</h2>
+    <section class="container adornos">
+        <div class="item">
+            <h3>Chispas de Chocolate</h3>
+            <img src="../images/chispas_choco.png" alt="chocolate" height="400px" width="300px">
+        </div>
+        <div class="item">
+            <h3>Chispas de Colores</h3>
+            <img src="../images/chispas_color.png" alt="vainilla" height="400px" width="300px">
+        </div>
+        <div class="item">
+            <h3>Fondant</h3>
+            <img src="../images/fondant.png" alt="red velvet" height="400px" width="300px">    
+        </div>
+        <div class="item">
+            <h3>Flores de azucar</h3>
+            <img src="../images/flores.png" alt="rlimon" height="400px" width="300px">    
+        </div>
+        <div class="item">
+            <h3>Frutas</h3>
+            <img src="../images/frutas.png" alt="rlimon" height="400px" width="300px">    
+        </div>
+    </section>
+        
+    <h2>PEDIDOS</h2>
+    <section class="pedidos">
+    
+        <h3>Realiza tu pedido aquí:</h3>
+
+        <p>Pastelería mas cercana para realizar tu pedido:</p>
+        <select name="Pastelería" id="Pastelería">
+            <option value="">Seleccione...</option>
+            <option value="centro">Centro</option>
+            <option value="este">Este</option>
+            <option value="oeste">Oeste</option>
+        </select>
+        <form action="procesar.js" method="post">
+            <div class="itempedidos">
+                <p>Seleccione los sabores que desee:</p>
+                <input type="checkbox" name="chocolate" id="chocolate" value="chocolate">
+                <label for="chocolate">Chocolate</label><br>
+                <input type="checkbox" name="vainilla" id="vainilla" value="vainilla">
+                <label for="chocolate">Vainilla</label><br>
+                <input type="checkbox" name="velvet" id="velvet" value="velvet">
+                <label for="chocolate">Red Velvet</label><br>
+                <input type="checkbox" name="limon" id="limon" value="limon">
+                <label for="chocolate">Limón</label><br>
+                
+            </div>
+            <div class="itempedidos">
+                <p>Seleccione los adornos que desee:</p>
+                <input type="checkbox" name="chispasch" id="chispasch" value="chispasch">
+                <label for="chispasch">Chispas de Chocolate</label><br>
+                <input type="checkbox" name="chispascol" id="chispascol" value="chispascol">
+                <label for="chispascol">Chispas de Colores</label><br>
+                <input type="checkbox" name="fondant" id="fondant" value="fondant">
+                <label for="fondant">Fondant</label><br>
+                <input type="checkbox" name="flores" id="flores" value="flores">
+                <label for="flores">Flores de azucar</label><br>
+                <input type="checkbox" name="frutas" id="frutas" value="frutas">
+                <label for="frutas">Frutas</label><br>
+                <label for="descripcion">Descripción:</label>
+                <textarea name="descripcion" id="descripcion" cols="30" rows="4" placeholder="Descripcioin detallada de su pedido"></textarea>
+            </div>          
+            <h3>Ingresa tus datos de contacto:</h3>
+            <table>
+                <tr>
+                    <td><label for="name">Nombre:</label></td>
+                    <td><input type="text" id="name" name="name" placeholder="Nombre Completo"></td>
+                </tr>
+                <tr>
+                    <td><label for="tlf">Teléfono:</label></td>
+                    <td><input type="number" name="tlf" id="tlf" placeholder="555-55-55"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">E-mail:</label></td>
+                    <td><input type="email" name="email" id="email" placeholder="correo@ejemplo.com"></td>
+                </tr>
+            </table>
+
+
+            <input type="submit" value="Enviar">
+        </form>
+    
+        
+    </section>
+    <h2>DIRECCIONES</h2>
+    <section class="container direcciones">
+        
+        <div>
+            <h3>CENTRO</h3>
+            <a href="https://goo.gl/maps/MsF25E8wHUjbGZ4e9" target="_blank"><img src="../images/ub_centro.png" alt="ubicacion centro" height="300px" width="300px"></a>
+            <p>Boulevard Panteon esq La Torre Plaza Bolivar, Caracas 1001, Distrito Capital</p><br>
+           
+        </div>
+        <div>
+            <h3>ESTE</h3>
+            <a href="https://goo.gl/maps/7nUGP7kKigc1QLgz5" target="_blank"><img src="../images/ub_este.png" alt="ubicacion este" height="300px" width="300px"></a>
+            <p>Avenida Río de Janeiro &, Avenida Jalisco, Caracas, Miranda</p><br>
+        </div>
+        <div>
+            <h3>OESTE</h3>
+            <a href="https://goo.gl/maps/ZtM6L6RAksEiSYyZA" target="_blank"><img src="../images/ub_oeste.png" alt="ubicacion oeste" height="300px" width="300px"></a>
+            <p>Avenida Principal El Paraíso, Caracas 1020, 1020, Distrito Capital</p><br>
+        </div>
+    </section>
+    <footer class="container">
+        <h3>REDES SOCIALES</h3>
+    </footer>
+</body>
+</html>
