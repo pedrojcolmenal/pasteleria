@@ -16,7 +16,8 @@
                 <a href="#sabores">SABORES</a>
                 <a href="#adornos">ADORNOS</a>
                 <a href="#pedidos">PEDIDOS</a>
-                <a href="#direcciones">DIRECCIONES</a>
+                <a href="#ubicacion">UBICACIÓN</a>
+                <a href="./admin/index.html">PASTELERO</a>
               </nav>
         </div>
         
@@ -116,14 +117,22 @@
         <h2>PEDIDOS</h2>
         <h3>Realiza tu pedido aquí:</h3>
 
-        <p>Pastelería mas cercana para realizar tu pedido:</p>
-        <select name="pasteleria" id="pasteleria">
-            <option value="">Seleccione...</option>
-            <option value="centro">Centro</option>
-            <option value="este">Este</option>
-            <option value="oeste">Oeste</option>
-        </select>
         <form action="procesar.js" method="post">
+
+            <p>Pastelería mas cercana para realizar tu pedido:</p>
+            <select name="pasteleria" id="pasteleria">
+                <option value="">Seleccione...</option>
+                <option value="centro">Centro</option>
+                <option value="este">Este</option>
+                <option value="oeste">Oeste</option>
+            </select>
+            <p>Seleccione la oferta de su preferencia:</p>
+            <select name="pasteleria" id="pasteleria">
+                <option value="">Ninguna</option>
+                <option value="chocofresa">Chocofresa</option>
+                <option value="terciopelo">Terciopelo</option>
+                <option value="citrus">Citrus</option>
+            </select>
             <div>
                 <p>Seleccione los sabores que desee:</p>
                 <input type="checkbox" name="chocolate" id="chocolate" value="chocolate">
@@ -174,26 +183,31 @@
         
     </section>
     
-    <section id="direcciones" class="container2 header">
+    <section id="ubicacion" class="container2 header">
         <div>
-            <h2>DIRECCIONES</h2>
+            <h2>UBICACIÓN</h2>
         </div>
         <div class="container">
             <div class="item">
                 <h3>CENTRO</h3>
                 <a href="https://goo.gl/maps/MsF25E8wHUjbGZ4e9" target="_blank"><img src="images/ub_centro.png" alt="ubicacion centro" height="200px" width="200px"></a>
-                <p>Boulevard Panteon esq La Torre Plaza Bolivar, Caracas 1001, Distrito Capital</p><br>
-            
+                <p>Boulevard Panteon esq La Torre Plaza Bolivar, Caracas 1001, Distrito Capital</p>
+                <p>Teléfono: 555-46-55</p>
+                <p>Horario: Lunes a Sabado 9:00 AM - 8:00 PM</p>
             </div>
             <div class="item">
                 <h3>ESTE</h3>
                 <a href="https://goo.gl/maps/7nUGP7kKigc1QLgz5" target="_blank"><img src="images/ub_este.png" alt="ubicacion este" height="200px" width="200px"></a>
-                <p>Avenida Río de Janeiro &, Avenida Jalisco, Caracas, Miranda</p><br>
+                <p>Avenida Río de Janeiro &, Avenida Jalisco, Caracas, Miranda</p>
+                <p>Teléfono: 545-46-56</p>
+                <p>Horario: Lunes a Sabado 9:00 AM - 11:00 PM</p>
             </div>
             <div class="item">
                 <h3>OESTE</h3>
                 <a href="https://goo.gl/maps/ZtM6L6RAksEiSYyZA" target="_blank"><img src="images/ub_oeste.png" alt="ubicacion oeste" height="200px" width="200px"></a>
-                <p>Avenida Principal El Paraíso, Caracas 1020, 1020, Distrito Capital</p><br>
+                <p>Avenida Principal El Paraíso, Caracas 1020, 1020, Distrito Capital</p>
+                <p>Teléfono: 535-46-57</p>
+                <p>Horario: Lunes a Sabado 10:00 AM - 7:00 PM</p>
             </div>
         </div>
             
