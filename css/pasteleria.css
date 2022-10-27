@@ -11,19 +11,32 @@
 }
 .ofertas{
     background-color: #2860a1;
+    color:#ffffff;
 }
 .sabores{
     background-color: #a1285a;
+    color:#ffffff;
 }
 .adornos{
     background-color: #54a128;
+    color:#ffffff;
 }
 .pedidos{
     background-color: #b4b4b4;
 }
 .direcciones{
-    background-color: #725f22;
+    background-color: #000000;
+    color:#ffffff;
 }
-.itempedidos{
-    width:max-content;
+.item{
+    width:min-content;
+}
+.top{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.container2{
+    display: flex;
+    flex-direction: column;  
 }
