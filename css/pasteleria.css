@@ -9,27 +9,20 @@
 .header{
     background-color: #e2e626;
 }
-.ofertas{
-    background-color: #2860a1;
+.seccion1{
+    /*background-color: #2860a1;*/
+    background-color: #db3f3c;
+    
     color:#ffffff;
 }
-.sabores{
-    background-color: #a1285a;
-    color:#ffffff;
-}
-.adornos{
-    background-color: #54a128;
-    color:#ffffff;
-}
-.pedidos{
-    background-color: #b4b4b4;
-}
-.direcciones{
-    background-color: #000000;
+.seccion2{
+    /*background-color: #a1285a;*/
+    background-color:#7a645d;
     color:#ffffff;
 }
 .item{
     width:min-content;
+    text-align: center;
 }
 .top{
     display: flex;
